@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copyflix</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="logo">Copyflix</div>
+            <nav class="main-menu">
+            <a href="#" class="active">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Bombando</a>
+            <a href="#">Minha lista</a>   
+            </nav> 
+        </div>
+        <div class="nav-right">
+            <button class="icon-button" aria-label="Buscar">
+                🔎
+            </button>
+            <button class="icon-button" aria-label="Notificações">
+                🔔
+            </button>
+            <div class="profile"></div>
+        </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-background" id="hero-background">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title"> titulo em destaque</h1>
+                <p id="hero-overview" class="hero-overview"> sinopse do filme que irá aparecer aqui carregados pela API</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">
+                        ▶ Assistir 
+                    </button>
+                    <button class="btn btn-secondary">
+                        ❕ mais informações
+                    </button>
+                </div>
+            </div>
+        </section>   
+        <!-- listas horizontais  -->
+        <section class="rows">
+            <div class="row">
+                <h2 class="rowtitle">Descubra suas próximas histórias</h2>
+                <div class="rows-scroller" id="row-trending">
+                    <!-- cards preenchidos via JS -->
+                </div>
+            </div>
+        </section>  
+    </main>
+</body>
+</html>
