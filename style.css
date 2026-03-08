@@ -56,7 +56,7 @@ button {
 }   
 
 .logo {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     font-weight: 900;
     letter-spacing: 0.08em;
     color: #e50914;
@@ -86,12 +86,140 @@ button {
 .icon-button {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
+    border-radius: 60%;
     display: inline-flex;
     align-items: center;
     justify-self: center;
     background-color: transparent;
     color: #fff;
 }
+
+.icon-button:hover {
+    background-color: rgba(255,255,255,0.1);
+
+}
+
+.profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #113255, #17b8ff);
+
+}
+
+main {
+    padding-top: 66px;
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    min-height: 420px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at 20% 20%,
+        rgba(0,0,0,0.2),
+        transparent 55%
+    ),
+    linear-gradient(to top, #000 10%, transparent 60%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 40rem;
+    padding: 12vh 3.5vw 3rem;
+}
+
+.hero-title {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);   
+}
+
+.hero-overview {
+    font-size: 0.98rem;
+    line-height: 1.4;
+    color: #e5e5e5;
+    max-width: 34rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 0.75;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.55rem 1.40rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background-color 0.2 ease, transform 0.1s ease;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: rgba(122, 122, 122, 0.5);
+    transform: scale(1.02);
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(122, 122, 122, 0.5);
+    transform: scale(1.02);
+}
+
+.hero-pagination {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.hero-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background-color: rgba(240, 240, 240, 0.4);
+}
+
+.hero-dot.active {
+    width: 18px;
+    background-color: #fff;
+}
+
+.rows {
+
+    
+}
+
 
 

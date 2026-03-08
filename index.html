@@ -11,7 +11,7 @@
     <script type="module" src="./script.js"></script>
     <header class="top-nav">
         <div class="nav-left">
-            <div class="logo">Copyflix</div>
+            <div class="logo">COPYFLIX</div>
             <nav class="main-menu">
             <a href="#" class="active">Início</a>
             <a href="#">Séries</a>
@@ -43,12 +43,13 @@
                 <p id="hero-overview" class="hero-overview"> sinopse do filme que irá aparecer aqui carregados pela API</p>
                 <div class="hero-actions">
                     <button class="btn btn-primary">
-                        ▶ Assistir 
+                    ▶ Assistir 
                     </button>
                     <button class="btn btn-secondary">
-                        ❕ mais informações
+                    ℹ️ mais informações
                     </button>
                 </div>
+                <div class="hero-pagination" id="hero-pagination"></div>
             </div>
         </section>   
         <!-- listas horizontais  -->
@@ -56,9 +57,14 @@
             <div class="row">
                 <h2 class="rowtitle">Descubra suas próximas histórias</h2>
                 <div class="rows-scroller" id="row-trending">
-                    <!-- cards preenchidos via JS -->
                 </div>
             </div>
+                    <div class="row">
+                        <h2 class="row-title">Filmes populares</h2>
+                        <div class="rows-scroller" id=" row-movies"></div>
+                    </div>
+                </div>
+            
         </section>  
     </main>
     
