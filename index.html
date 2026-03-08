@@ -1,75 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
     <title>Copyflix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-</head>
-
-<body>
-    <script type="module" src="./script.js"></script>
+  </head>
+  <body>
     <header class="top-nav">
-        <div class="nav-left">
-            <div class="logo">COPYFLIX</div>
-            <nav class="main-menu">
-            <a href="#" class="active">Início</a>
-            <a href="#">Séries</a>
-            <a href="#">Filmes</a>
-            <a href="#">Bombando</a>
-            <a href="#">Minha lista</a>   
-            </nav> 
-        </div>
-        <div class="nav-right">
-            <button class="icon-button" aria-label="Buscar">
-                🔎
-            </button>
-            <button class="icon-button" aria-label="Notificações">
-                🔔
-            </button>
-            <div class="profile"></div>
-        </div>
-
-        </div>
+      <div class="nav-left">
+        <div class="logo">COPYFLIX</div>
+        <nav class="main-menu">
+          <a href="#" class="active">Início</a>
+          <a href="#">Séries</a>
+          <a href="#">Filmes</a>
+          <a href="#">Bombando</a>
+          <a href="#">Minha lista</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <button class="icon-button" aria-label="Buscar">
+          🔍
+        </button>
+        <button class="icon-button" aria-label="Notificações">
+          🔔
+        </button>
+        <div class="profile"></div>
+      </div>
     </header>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="hero-background" id="hero-background">
-            </div>
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1 id="hero-title" class="hero-title"> titulo em destaque</h1>
-                <p id="hero-overview" class="hero-overview"> sinopse do filme que irá aparecer aqui carregados pela API</p>
-                <div class="hero-actions">
-                    <button class="btn btn-primary">
-                    ▶ Assistir 
-                    </button>
-                    <button class="btn btn-secondary">
-                    ℹ️ mais informações
-                    </button>
-                </div>
-                <div class="hero-pagination" id="hero-pagination"></div>
-            </div>
-        </section>   
-        <!-- listas horizontais  -->
-        <section class="rows">
-            <div class="row">
-                <h2 class="rowtitle">Descubra suas próximas histórias</h2>
-                <div class="rows-scroller" id="row-trending">
-                </div>
-            </div>
-                    <div class="row">
-                        <h2 class="row-title">Filmes populares</h2>
-                        <div class="rows-scroller" id=" row-movies"></div>
-                    </div>
-                </div>
-            
-        </section>  
-    </main>
+   
     
+    <main>
+      <!-- Seção de destaque / herói -->
+      <section id="hero" class="hero">
+        <div class="hero-background" id="hero-background">
+          <!-- imagem de fundo via CSS/JS -->
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 id="hero-title" class="hero-title">Título em destaque</h1>
+          <p id="hero-overview" class="hero-overview">
+            Sinopse do filme ou série em destaque vai aparecer aqui quando os
+            dados forem carregados da API.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">
+              ▶ Assistir
+            </button>
+            <button class="btn btn-secondary">
+              ⓘ Mais informações
+            </button>
+          </div>
+          <div class="hero-pagination" id="hero-pagination">
+            <!-- bolinhas do carrossel de destaque (preenchidas via JS) -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Listas horizontais -->
+      <section class="rows">
+        <div class="row">
+          <h2 class="row-title">Descubra suas próximas histórias</h2>
+          <div class="row-scroller" id="row-trending">
+            <!-- cards preenchidos via JS -->
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 class="row-title">Séries para maratonar</h2>
+          <div class="row-scroller" id="row-series">
+            <!-- cards preenchidos via JS -->
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 class="row-title">Filmes populares</h2>
+          <div class="row-scroller" id="row-movies">
+            <!-- cards preenchidos via JS -->
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer">
-        <p>Clone simples da página inicial da Neflix para estudos.</p>
+      <p>Clone simples da página inicial da Netflix para estudos.</p>
     </footer>
-</body>
+
+    <!-- Configuração da API (chave, URL base, etc.) -->
+    <!-- Arquivo opcional separado para não expor diretamente a chave no código principal -->
+    <script src="./config.js"></script>
+
+    <!-- Lógica principal da página -->
+    <script src="./main.js"></script>
+  </body>
 </html>
