@@ -85,10 +85,11 @@ function renderRow(containerId, items) {
 
 // --- CARREGAMENTO INICIAL ---
 async function loadData() {
-    const [trending, series, movies] = await Promise.all([
+    const [trending, series, movies, watchlist] = await Promise.all([
         fetchFromApi("trending/all/week"),
         fetchFromApi("tv/popular"),
-        fetchFromApi("movie/popular")
+        fetchFromApi("movie/popular"),
+        fetchFromApi("discover/tv") 
     ]);
 
     if (trending?.results) {
@@ -96,8 +97,10 @@ async function loadData() {
         renderHero();
         renderRow("row-trending", trending.results);
     }
+    if (trending?.results) renderRow("row-trending", trending.results);
     if (series?.results) renderRow("row-series", series.results);
     if (movies?.results) renderRow("row-movies", movies.results);
+    if (watchlist?.results) renderRow("row-watchlist", watchlist.results);
 }
 
 document.addEventListener("DOMContentLoaded", loadData);

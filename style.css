@@ -103,7 +103,7 @@ button {
   width: 32px;
   height: 32px;
   border-radius: 4px;
-  background: linear-gradient(135deg, #5f7a97, #0094d3);
+  background: linear-gradient(135deg, #030303, #176181);
 }
 
 main {
@@ -233,9 +233,9 @@ main {
 }
 
 .row-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 0.90rem;
 }
 
 .row-scroller {
