@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <div id="login-modal" class="modal-overlay modal-overlay--visible">
+    <div class="modal-card modal-card--centered">
+      <div class="modal-header">
+        
+        <h1>coloque sua senha</h1>
+        <label for="admin-email">Email</label>
+        <input type="email"
+          id="admin-email"
+          placeholder="Digite o email"
+          autocomplete="off"
+          required>
+      </div>
+      <form id="login-form" class="login-form">
+        <div class="form-group">
+          <label for="admin-password">Senha de Acesso</label>
+          <input 
+            type="password" 
+            id="admin-password" 
+            placeholder="Digite a senha" 
+            autocomplete="off"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn--primary btn--large">Entrar</button>
+        <p id="login-error" class="error-message"></p>
+      </form>
+    </div>
+  </div>
+    
+</body>
+</html>
